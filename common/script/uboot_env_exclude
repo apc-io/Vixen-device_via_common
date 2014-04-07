@@ -1,0 +1,21 @@
+wmt.ethaddr.persist
+ethaddr
+serialnum
+androidboot.serialno
+pcba.serialno
+wmt.btaddr.persist
+btaddr
+#partition table
+boot-NAND_mtd
+boot-NAND_ofs
+boot-NAND_len
+recov-NAND_mtd
+recov-NAND_ofs
+recov-NAND_len
+misc-NAND_mtd
+misc-NAND_ofs
+misc-NAND_len
+filesystem-NAND_mtd
+filesystem-NAND_ofs
+filesystem-NAND_len
+#TODO:add more env you want to exclude here

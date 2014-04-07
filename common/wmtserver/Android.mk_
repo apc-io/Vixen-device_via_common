@@ -1,0 +1,13 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS) 
+
+
+LOCAL_SRC_FILES += wmtserver:system/bin/wmtserver
+LOCAL_SRC_FILES += wmtserver:obj/EXECUTABLES/wmtserver_intermediates/LINKED/wmtserver
+LOCAL_SRC_FILES += wmtserver:symbols/system/bin/wmtserver
+LOCAL_SRC_FILES += wmtserver:obj/EXECUTABLES/wmtserver_intermediates/wmtserver
+LOCAL_SRC_FILES += export_includes:obj/EXECUTABLES/wmtserver_intermediates/export_includes
+
+include $(WMT_PREBUILT)
+
