@@ -32,7 +32,7 @@
 
 #include <hardware/lights.h>
 #include <cutils/properties.h>
-#include <utils/wmt_battery.h>
+//#include <utils/wmt_battery.h>
 
 /******************************************************************************/
 
@@ -138,7 +138,7 @@ set_light_backlight(struct light_device_t* dev,
         handle_trackball_light_locked(dev);
     }
 
-    reportModuleChangeEventForBattery(BM_BRIGHTNESS, (brightness * 100)/255);
+    //reportModuleChangeEventForBattery(BM_BRIGHTNESS, (brightness * 100)/255);
     pthread_mutex_unlock(&g_lock);
     return err;
 }
