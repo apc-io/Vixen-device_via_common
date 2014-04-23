@@ -38,7 +38,7 @@ cache_mngr.c  class_obj.c   data.c     genl.c    log_obj.c      netem.c     prio
 
 LOCAL_MODULE := libnl
 
-LOCAL_MODULE_TAGS := $(TARGET_BUILD_VARIANT)    
+LOCAL_MODULE_TAGS := optional    
 include $(BUILD_SHARED_LIBRARY)
 
 

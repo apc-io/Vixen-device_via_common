@@ -42,6 +42,20 @@ PRODUCT_PACKAGES += \
     nanddump \
     nandwrite \
     flashcp
+	
+#wmid
+PRODUCT_PACKAGES += \
+	gralloc.wmt       \
+	camera.wmt        \
+	libwmtgpio        \
+	lights.wmt        \
+	chat              \
+	libnl             \
+	sensors.wmt       \
+	memsicd           \
+	wmtbattery        \
+	libswexif         \
+	dhcp6c            
 
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 

@@ -63,7 +63,8 @@ endif
 
 
 ifeq ($(LOCAL_MODULE_TAGS),)
-LOCAL_MODULE_TAGS := $(TARGET_BUILD_VARIANT) 
+#LOCAL_MODULE_TAGS := optional 
+#LOCAL_MODULE_TAGS := user
 endif
 
 ifndef _wmt_add_prebuilt_file_defined
@@ -96,7 +97,12 @@ $(foreach t,$(1), \
     $(eval LOCAL_SRC_FILES := $(t)) \
     $(eval LOCAL_MODULE_STEM := $(notdir $(t))) \
    ) \
-  $(eval LOCAL_MODULE    := $(2)@$(LOCAL_MODULE_STEM)) \
+  $(eval LOCAL_MODULE    := $(2)/$(LOCAL_MODULE_STEM)) \
+  $(info wmt prebuilt $(LOCAL_SRC_FILES)<-------->:$(LOCAL_MODULE)) \
+  $(eval  DIR_NAME := $(shell dirname $(LOCAL_MODULE))) \
+  $(shell mkdir -p $(DIR_NAME)) \
+  $(info  DIR_NAME is $(DIR_NAME)) \
+  $(shell  cp  -rf $(LOCAL_PATH)/$(LOCAL_SRC_FILES)  $(LOCAL_MODULE)) \
   $(eval include $(BUILD_PREBUILT)) \
  )
 endef

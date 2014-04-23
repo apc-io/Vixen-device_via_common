@@ -45,7 +45,7 @@ LOCAL_SRC_FILES := \
 	exif-tag.c \
 	exif-utils.c
 
-LOCAL_MODULE_TAGS := $(TARGET_BUILD_VARIANT)
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libswexif
 include $(BUILD_SHARED_LIBRARY)
 

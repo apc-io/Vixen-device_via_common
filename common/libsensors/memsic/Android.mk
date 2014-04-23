@@ -51,7 +51,7 @@ LOCAL_SRC_FILES		:= daemon/memsicd.c			\
 			   adapter/sensors_algo_ids_util.c
 LOCAL_SHARED_LIBRARIES := liblog libcutils libutils 
 LOCAL_MODULE := memsicd
-LOCAL_MODULE_TAGS := $(TARGET_BUILD_VARIANT)
+LOCAL_MODULE_TAGS := optional
 #LOCAL_MODULE_TAGS := optional
 include $(BUILD_EXECUTABLE)
 

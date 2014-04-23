@@ -20,6 +20,6 @@ LOCAL_SRC_FILES += libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so
 LOCAL_SRC_FILES += export_includes:obj/SHARED_LIBRARIES/libMali_intermediates/export_includes 
 LOCAL_SRC_FILES += export_includes:obj/SHARED_LIBRARIES/libUMP_intermediates/export_includes 
 
-LOCAL_MODULE_TAGS := $(TARGET_BUILD_VARIANT) 
-
+LOCAL_MODULE_TAGS := optional 
+$(info ==================copy mali ==========================)
 include $(WMT_PREBUILT)

@@ -62,7 +62,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_MODULE := camera.wmt
 
-LOCAL_MODULE_TAGS := $(TARGET_BUILD_VARIANT)    
+LOCAL_MODULE_TAGS := optional    
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS) 

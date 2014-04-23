@@ -19,7 +19,7 @@ LOCAL_SRC_FILES:= \
 		battery.cpp \
         wmtbattery.cpp
 
-LOCAL_MODULE_TAGS := $(TARGET_BUILD_VARIANT)
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE:= wmtbattery
 
 include $(BUILD_EXECUTABLE)
