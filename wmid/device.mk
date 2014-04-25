@@ -45,6 +45,8 @@ PRODUCT_PACKAGES += \
 	
 #wmid
 PRODUCT_PACKAGES += \
+	audio.a2dp.default \
+	libhardware_legacy_rtl \
 	gralloc.wmt       \
 	camera.wmt        \
 	libwmtgpio        \

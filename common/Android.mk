@@ -9,7 +9,8 @@ LOCAL_SRC_FILES := ntfs-3g:root/bin/ntfs-3g \
                    lsz:system/bin/lsz \
                    media_codecs.xml:system/etc/media_codecs.xml \
                    android.hardware.screen.xml:system/etc/permissions/android.hardware.screen.xml \
-                   android.hardware.microphone.xml:system/etc/permissions/android.hardware.microphone.xml
+                   android.hardware.microphone.xml:system/etc/permissions/android.hardware.microphone.xml \
+				   wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 include $(WMT_PREBUILT)
 

@@ -101,7 +101,6 @@ $(foreach t,$(1), \
   $(info wmt prebuilt $(LOCAL_SRC_FILES)<-------->:$(LOCAL_MODULE)) \
   $(eval  DIR_NAME := $(shell dirname $(LOCAL_MODULE))) \
   $(shell mkdir -p $(DIR_NAME)) \
-  $(info  DIR_NAME is $(DIR_NAME)) \
   $(shell  cp  -rf $(LOCAL_PATH)/$(LOCAL_SRC_FILES)  $(LOCAL_MODULE)) \
   $(eval include $(BUILD_PREBUILT)) \
  )
