@@ -16,7 +16,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-$(call inherit-product, device/wmt/common/device.mk)
+$(call inherit-product, device/via/common/device.mk)
 
-WMT_PREBUILT=device/wmt/common/wmt_prebuilt.mk
+WMT_PREBUILT=device/via/common/wmt_prebuilt.mk
 

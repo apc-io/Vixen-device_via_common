@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/wmt/common/wmtmsvd
+LOCAL_PATH := device/via/common/wmtmsvd
 
 # MSVD Library necessary for common
 PRODUCT_COPY_FILES := \
@@ -22,6 +22,6 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/libwmtmsvd.so:system/lib/libwmtmsvd.so \
     $(LOCAL_PATH)/libwmtmsvd.so:obj/lib/libwmtmsvd.so
 
-$(shell mkdir -p  out/target/product/wmid/obj/SHARED_LIBRARIES/libwmtmsvd_intermediates)
-$(shell echo "" > out/target/product/wmid/obj/SHARED_LIBRARIES/libwmtmsvd_intermediates/export_includes)
-$(shell echo "" > out/target/product/wmid/obj/SHARED_LIBRARIES/libwmtmsvd_intermediates/import_includes)
+$(shell mkdir -p  out/target/product/vixen/obj/SHARED_LIBRARIES/libwmtmsvd_intermediates)
+$(shell echo "" > out/target/product/vixen/obj/SHARED_LIBRARIES/libwmtmsvd_intermediates/export_includes)
+$(shell echo "" > out/target/product/vixen/obj/SHARED_LIBRARIES/libwmtmsvd_intermediates/import_includes)

@@ -26,7 +26,7 @@ LOCAL_SHARED_LIBRARIES +=
 
 LOCAL_STATIC_LIBRARIES += 
 LOCAL_SYSTEM_SHARED_LIBRARIES := libc libm
-LOCAL_C_INCLUDES += device/wmt/common/libnl/include  device/wmt/common/libnl/include2
+LOCAL_C_INCLUDES += device/via/common/libnl/include  device/via/common/libnl/include2
 
 LOCAL_SRC_FILES := \
 addr.c        cache_mngt.c  cls_api.c  doc.c     genl_family.c  lookup.c    nexthop.c  qdisc_api.c   route.c        socket.c \

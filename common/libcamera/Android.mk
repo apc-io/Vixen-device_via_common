@@ -46,8 +46,8 @@ LOCAL_C_INCLUDES += external/jpeg \
 					frameworks/base/core/jni/android/graphics \
 					frameworks/base/include \
 					frameworks/base/include/media/stagefright/openmax \
-					device/wmt/common/ \
-					device/wmt/common/wmt_api/include \
+					device/via/common/ \
+					device/via/common/wmt_api/include \
 					frameworks/native/include \
 					external/libyuv/files/include \
 

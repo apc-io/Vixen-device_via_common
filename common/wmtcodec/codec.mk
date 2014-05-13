@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/wmt/common/wmtcodec
+LOCAL_PATH := device/via/common/wmtcodec
 
 # MSVD Library necessary for common
 PRODUCT_COPY_FILES := \
@@ -22,6 +22,6 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/libwmtcodec.so:system/lib/libwmtcodec.so \
     $(LOCAL_PATH)/libwmtcodec.so:obj/lib/libwmtcodec.so
 
-$(shell mkdir -p  out/target/product/wmid/obj/SHARED_LIBRARIES/libwmtcodec_intermediates)
-$(shell echo "" > out/target/product/wmid/obj/SHARED_LIBRARIES/libwmtcodec_intermediates/export_includes)
-$(shell echo "" > out/target/product/wmid/obj/SHARED_LIBRARIES/libwmtcodec_intermediates/import_includes)
+$(shell mkdir -p  out/target/product/vixen/obj/SHARED_LIBRARIES/libwmtcodec_intermediates)
+$(shell echo "" > out/target/product/vixen/obj/SHARED_LIBRARIES/libwmtcodec_intermediates/export_includes)
+$(shell echo "" > out/target/product/vixen/obj/SHARED_LIBRARIES/libwmtcodec_intermediates/import_includes)

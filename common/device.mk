@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     hwui.render_dirty_regions=false
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/wmt/common/overlay
+    device/via/common/overlay
 
 # Email/Mms
 PRODUCT_PACKAGES += \

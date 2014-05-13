@@ -8,7 +8,7 @@ LOCAL_PRELINK_MODULE := false
 LOCAL_SRC_FILES:= client6_addr.c   client6_token.c  confdata.c   dhcp6c.c  lease.c  \
 client6_parse.c  common.c         dad_parse.c  hash.c    lease_token.c  timer.c 
 
-LOCAL_C_INCLUDES :=  $(LOCAL_PATH) device/wmt/common/libnl/include \
+LOCAL_C_INCLUDES :=  $(LOCAL_PATH) device/via/common/libnl/include \
 
 	
 LOCAL_SHARED_LIBRARIES := \
