@@ -15,14 +15,19 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := wmtgpiodev.c
-
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-
 LOCAL_SHARED_LIBRARIES := libutils
-
 LOCAL_MODULE_TAGS := optional
-
 LOCAL_MODULE := libwmtgpio
-
 include $(BUILD_SHARED_LIBRARY)
+
+
+include $(CLEAR_VARS) 
+
+LOCAL_SRC_FILES += libgpio_api.so:system/lib/libgpio_api.so
+LOCAL_SRC_FILES += libgpio_api.so:obj/SHARED_LIBRARIES/libgpio_api_intermediates/LINKED/libgpio_api.so
+LOCAL_SRC_FILES += libgpio_api.so:symbols/system/lib/libgpio_api.so
+LOCAL_SRC_FILES += libgpio_api.so:obj/lib/libgpio_api.so
+LOCAL_SRC_FILES += export_includes:obj/SHARED_LIBRARIES/libgpio_api_intermediates/export_includes
+include $(WMT_PREBUILT)
