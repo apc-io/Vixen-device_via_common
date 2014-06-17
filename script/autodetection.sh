@@ -200,7 +200,9 @@ mtk5931_depend_rmmod() {
 
 mkdir -p ${SYS_MNT}/etc/wifi
 
-wifi_drivers="eagle 8192cu 8188eu 8723au mt7601Usta nmc1000 wlan_mt5931 bcmdhd_ap6330 bcmdhd_ap6476 bcmdhd wlan_mt6620"
+# Vixen only support 8188eu
+#wifi_drivers="eagle 8192cu 8188eu 8723au mt7601Usta nmc1000 wlan_mt5931 bcmdhd_ap6330 bcmdhd_ap6476 bcmdhd wlan_mt6620"
+wifi_drivers="8188eu"
 for wifi_drv in $wifi_drivers
 do
     info "detect $wifi_drv"
