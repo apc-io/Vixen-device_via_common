@@ -254,9 +254,9 @@ void CameraHardware::initDefaultParameters()
     p.set(CameraParameters::KEY_SUPPORTED_PREVIEW_FPS_RANGE, "(5000,30000)");
 
     //video
-    //p.set(CameraParameters::KEY_VIDEO_SIZE, "640x480");
-    //p.set(CameraParameters::KEY_SUPPORTED_VIDEO_SIZES, "176x144,320x240,640x480");
-    //p.set(CameraParameters::KEY_PREFERRED_PREVIEW_SIZE_FOR_VIDEO, "640x480");
+    p.set(CameraParameters::KEY_VIDEO_SIZE, "640x480");
+    p.set(CameraParameters::KEY_SUPPORTED_VIDEO_SIZES, "176x144,320x240,640x480");
+    p.set(CameraParameters::KEY_PREFERRED_PREVIEW_SIZE_FOR_VIDEO, "640x480");
     p.set(CameraParameters::KEY_VIDEO_FRAME_FORMAT, CameraParameters::PIXEL_FORMAT_YUV420SP);
 
     // jpeg
